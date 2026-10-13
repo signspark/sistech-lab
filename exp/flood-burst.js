@@ -10,7 +10,7 @@
   const G = 9.81, HMIN = 1e-3, WET = 0.02, FR_MAX = 1.0, ALPHA = 0.5, TANK_H = 6, SIM_MAX = 7200;
   const FB = {
     on:false, phase:'idle',
-    opt:{ mode:'burst', vol:30000, rain:100, dom:800, cell:4, n:0.035, speed:30, view:'depth' },
+    opt:{ mode:'inflow', vol:50000, rain:100, dom:1200, cell:2, n:0.035, speed:30, view:'depth' },
     grid:null, sim:null, prim:null, oldPrim:null, ents:[], raf:0, lastNow:0, lastDraw:0, drawMs:0, stats:null, wallStart:0
   };
   const $q = s => document.querySelector(s);
